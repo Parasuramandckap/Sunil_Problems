@@ -1,21 +1,25 @@
 <?php
+for($i=0;$i<1;$i++){
+   $first = (int)readline('Enter first Operator: ');
+   $condition = true;
+  if($first == 1){
+      echo "neither prime number or composite";
+  }
+  else if($first>1){
+      for($i=2;$i<$first;$i++){
+          if($first % $i == 0){
+            $condition = false;  
+          }
+      }
+      
+        if($condition){
+      echo "is a prime number";
+  }
+  else{
+      echo "not prime number";
+  }
+  }
+  
 
-function check_prime($num)
-{
-    if($num === 1){
-        return false;
-    }
-    for($i=2;$i<$num;$i++){
-       if($num % $i == 0){
-           return false;
-           break;
-       }
-    }
-    return true;
 }
-if(check_prime(13)){
-    echo "its prime number";
-}
-else{
-    echo "it's a non-prime number";
-}
+?>
