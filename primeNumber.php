@@ -16,9 +16,10 @@ for($i=0;$i<1;$i++){
       echo "is a prime number";
   }
   else{
-      echo "not prime number";
+       echo "composite number";;
   }
   }
+
   
 
 }
