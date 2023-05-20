@@ -1,5 +1,4 @@
 <?php
-for($i=0;$i<1;$i++){
    $first = (int)readline('Enter first Operator: ');
    $condition = true;
   if($first == 1){
@@ -19,8 +18,4 @@ for($i=0;$i<1;$i++){
        echo "composite number";;
   }
   }
-
-  
-
-}
 ?>
