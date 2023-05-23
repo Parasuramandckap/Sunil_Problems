@@ -5,6 +5,8 @@
 
 $name =readline("Enter the Number:");
 
+
+if(is_numeric($name)){
 //split the given the number like this [0,1] 
 $split_Number = str_split($name);
 
@@ -16,4 +18,9 @@ for ($i=count($split_Number)-1; $i >=0 ; $i--) {
 }
 //implode is type of separater 
 echo implode(',', $output);
+}
+else{
+    echo "Its not a Number";
+}
+
 
