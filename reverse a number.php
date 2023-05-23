@@ -7,8 +7,9 @@ $name =readline("Enter the Number:");
 
 
 if(is_numeric($name)){
+$foolNumber = floor($name);
 //split the given the number like this [0,1] 
-$split_Number = str_split($name);
+$split_Number = str_split($foolNumber);
 
 $output = [];
 //then loop split number and check the i value inside the split number array then i;m store the output array
